@@ -4,6 +4,8 @@
     border: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: #eeeaff;
+    color: #382d72;
+    text-decoration: none;
 }
 
 body {
@@ -11,50 +13,40 @@ body {
     flex-direction: column;
 }
 
+img {
+    border-radius: 50%;
+}
+
 #header {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 4rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    font-size: 36px;
-    height: 4rem;
+    font-size: 1.75rem;
+    width: 100%;
     justify-content: space-between;
+    align-items: center;
+    background-color: whitesmoke;
+    position: fixed;
+}
+
+#name, .link, #hlinks {
     background-color: whitesmoke;
 }
 
-#header .hlinks {
-    display: flex;
-    gap: 4rem;
-    background-color: whitesmoke;
-}
-
-#name {
-    background-color: whitesmoke;
-}
-
-.hlinks a {
-    background-color: whitesmoke;
-}
-
-a {
-    text-decoration: none;
-    color: #5c509c;
+.link, #name {
+    margin: 1rem;
 }
 
 #about-me {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
-    padding-top: 6rem;
+    gap: 2rem;
+    margin-top: 8rem;
+    text-align: center;
+    font-size: 1.25rem;
 }
 
-#about-me img {
+#pfp {
     width: 20rem;
-    border-radius: 10rem;
-    margin: 2rem;
 }
 
 #about-me #socials {
@@ -62,7 +54,14 @@ a {
     gap: 4rem;
 }
 
-#about-me #socials #links {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
+#social-img {
+    width: 5rem;
+}
+
+#proj {
+    font-size: 3rem;
+    font-weight: 1000;
+    text-align: center;
+    gap: 1.5rem;
+    margin-top: 8rem;
 }
