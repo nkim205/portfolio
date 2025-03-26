@@ -11,6 +11,7 @@
 body {
     display: flex;
     flex-direction: column;
+    gap: 8rem;
 }
 
 img {
@@ -19,7 +20,7 @@ img {
 
 #header {
     display: flex;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     width: 100%;
     justify-content: space-between;
     align-items: center;
@@ -39,14 +40,19 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
+    gap: 3rem;
     margin-top: 8rem;
-    text-align: center;
-    font-size: 1.25rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
 }
 
 #pfp {
-    width: 20rem;
+    width: 30rem;
+}
+
+#description {
+    text-align: center;
+    font-size: 2rem;
 }
 
 #about-me #socials {
@@ -59,9 +65,52 @@ img {
 }
 
 #proj {
-    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.title {
+    font-size: 6rem;
     font-weight: 1000;
     text-align: center;
     gap: 1.5rem;
-    margin-top: 8rem;
+}
+
+.pTabs {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    align-self: center;
+    justify-content: center;
+    align-content: center;
+    margin-right: 15rem;
+    margin-left: 15rem;
+}
+
+li:hover {
+    transform: scale(1.03);
+}
+
+li {
+    display: flex;
+    flex: 1 0 33%;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    list-style-type: none;
+    text-align: center;
+    width: 25rem;
+    height: 5rem;
+    padding: 1.5rem;  
+    border: 3px solid black;
+    transition: 0.5s;
+    background-color: #382d72;
+}
+
+.pEnt {
+    background-color: #382d72;
+    color: #eeeaff;
+    font-size: 2rem;
+    font-weight: 600;
 }
