@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #eeeaff;
+    color: #382d72;
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+}
+
+#header {
+    display: flex;
+    font-size: 1.5rem;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: whitesmoke;
+    position: fixed;
+}
+
+#name, .link, #hlinks {
+    background-color: whitesmoke;
+}
+
+.link, #name {
+    margin: 1rem;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    padding-top: 8rem;
+    gap: 2rem;
+    align-items: center;
+}
+
+#title {
+    align-self: center;
+    font-size: 6rem;
+    font-weight: 1000;
+}
+
+#description {
+    font-size: 2rem;
+    padding: 4rem;
+    text-indent: 8rem;
+}
+
+#driveLink {
+    align-self: center;
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+}
+
+img, video {
+    width: auto;
+    height: fit-content;
+    max-width: 40%;
+    max-height: 40%;
+}
