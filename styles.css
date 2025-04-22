@@ -114,3 +114,28 @@ li {
     font-size: 2rem;
     font-weight: 600;
 }
+
+.boxlist {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 4rem;
+}
+
+#boxitem {
+    background-color: #392d721d;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 1rem 2rem lightgray;
+    width: 16rem;
+    text-align: center;
+    justify-items: center;
+    font-size: 2rem;
+    font-weight: 400;
+    transition: 0.5s;
+}
+
+#boxitem:hover {
+    transform: scale(1.06);
+}

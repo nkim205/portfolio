@@ -49,6 +49,7 @@ body {
 #description {
     font-size: 2rem;
     padding: 4rem;
+    padding-top: 2rem;
     text-indent: 8rem;
 }
 
@@ -64,6 +65,7 @@ body {
     gap: 4rem;
     justify-content: center;
     align-items: center;
+    
 }
 
 img, video {
@@ -71,4 +73,19 @@ img, video {
     height: fit-content;
     max-width: 40%;
     max-height: 40%;
+}
+
+#wsimg {
+    width: 25%;
+}
+
+#projlink {
+    font-size: 1.5rem;
+    padding-bottom: 0;
+}
+
+#projlinkcontainer {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
 }
