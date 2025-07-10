@@ -3,7 +3,7 @@ const AboutMe = () => {
     
     return (
         <div className="section">
-            <img src="/images/headshot.jpg" className="w-[12.5vw] rounded-full"></img>
+            <img src="/portfolio/images/headshot.jpg" className="w-[12.5vw] rounded-full"></img>
             <p className="text-[1.5rem] text-center text-purple-900 mx-[20vw]">{description}</p>
             <div className="flex flex-row gap-16">
                 <a href="https://github.com/nkim205" target="_blank"><img src="/images/github.png" className="social-icon"></img></a>
