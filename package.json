@@ -1,9 +1,5 @@
 {
-    "repository": {
-        "type": "git",
-        "url": "git+ssh://git@github.com/nkim205/portfolio.git"
-    },
-    "homepage": "https://nkim205.github.io/portfolio",
+    "homepage": "https://nkim205.github.io/portfolio/",
     "name": "portfolio",
     "private": true,
     "version": "0.0.0",
