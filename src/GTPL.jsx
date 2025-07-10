@@ -10,7 +10,7 @@ const GTPL = () => {
                 <p className="header">Georgia Tech Propulsive Landers (GTPL)</p>
                 <a href="https://www.gtpropulsivelanders.org/" target="_blank" className="desc text-center underline">Link to Propulsive Landers Website</a>
                 <p className="desc indent-[4rem]">{gtplDesc}</p>
-                <img src="../public/images/gtpl.jpg" className="w-[60vw]"/>
+                <img src="/images/gtpl.jpg" className="w-[60vw]"/>
             </div>
         </div>
     )

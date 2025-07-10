@@ -14,10 +14,10 @@ const GROWER = () => {
                 </div>
                 <p className="desc indent-[4rem]">{growerDesc}</p>
                 <div className="astro-card-grid">
-                    <img src="../public/images/grower/nc_saidi.png" className="astro-card"/>
-                    <img src="../public/images/grower/nc_saifi.png" className="astro-card"/>
-                    <img src="../public/images/grower/va_saidi.png" className="astro-card"/>
-                    <img src="../public/images/grower/va_saifi.png" className="astro-card"/>
+                    <img src="/images/grower/nc_saidi.png" className="astro-card"/>
+                    <img src="/images/grower/nc_saifi.png" className="astro-card"/>
+                    <img src="/images/grower/va_saidi.png" className="astro-card"/>
+                    <img src="/images/grower/va_saifi.png" className="astro-card"/>
                 </div>
             </div>
         </div>

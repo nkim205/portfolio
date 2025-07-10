@@ -1,6 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter, Routes, Route } from 'react-router-dom'
 import './index.css'
 import Home from './Home'
 import Astrophotography from './Astrophotography'
@@ -13,7 +13,7 @@ import ScrollToTop from './ScrollToTop'
 
 createRoot(document.getElementById('root')).render(
     <StrictMode>
-        <BrowserRouter>
+        <HashRouter>
             <ScrollToTop/>
             <Routes>
                 <Route path="/" element={<Home/>} />
@@ -24,6 +24,6 @@ createRoot(document.getElementById('root')).render(
                 <Route path="/SSRL" element={<SSRL/>} />
                 <Route path="/WanderSync" element={<WanderSync/>} />
             </Routes>
-        </BrowserRouter>
+        </HashRouter>
     </StrictMode>,
 )

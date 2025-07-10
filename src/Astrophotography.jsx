@@ -17,12 +17,12 @@ const Astrophotography = () => {
                 </div>
                 
                 <div className="astro-card-grid">
-                    <img src="../public/images/astro/orion.png" className="astro-card"/>
-                    <img src="../public/images/astro/heart-and-soul.png" className="astro-card"/>
-                    <img src="../public/images/astro/tadpoles.png" className="astro-card"/>
-                    <img src="../public/images/astro/lagoon.png" className="astro-card"/>
-                    <img src="../public/images/astro/moon.png" className="astro-card"/>
-                    <img src="../public/images/astro/eclipse.png" className="astro-card"/>
+                    <img src="/images/astro/orion.png" className="astro-card"/>
+                    <img src="/images/astro/heart-and-soul.png" className="astro-card"/>
+                    <img src="/images/astro/tadpoles.png" className="astro-card"/>
+                    <img src="/images/astro/lagoon.png" className="astro-card"/>
+                    <img src="/images/astro/moon.png" className="astro-card"/>
+                    <img src="/images/astro/eclipse.png" className="astro-card"/>
                 </div>
             </div>
         </div>
