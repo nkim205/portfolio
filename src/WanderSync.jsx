@@ -16,12 +16,12 @@ const WanderSync = () => {
                 
                 <p className="desc indent-[4rem]">{wandersyncDesc}</p>
                 <div className=" grid grid-cols-3 gap-4 md:gap-6 lg:gap-8">
-                    <img src="/images/wandersync/home.png"/>
-                    <img src="/images/wandersync/Accomodations.png"/>
-                    <img src="/images/wandersync/Logistics.png"/>
-                    <img src="/images/wandersync/Destinations.png"/>
-                    <img src="/images/wandersync/Dining.png"/>
-                    <img src="/images/wandersync/Community.png"/>
+                    <img src="/portfolio/images/wandersync/home.png"/>
+                    <img src="/portfolio/images/wandersync/Accomodations.png"/>
+                    <img src="/portfolio/images/wandersync/Logistics.png"/>
+                    <img src="/portfolio/images/wandersync/Destinations.png"/>
+                    <img src="/portfolio/images/wandersync/Dining.png"/>
+                    <img src="/portfolio/images/wandersync/Community.png"/>
                 </div>
             </div>
         </div>
