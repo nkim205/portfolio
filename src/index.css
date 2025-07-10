@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+* {
+    font-family: Outfit;
+}
+
+.social-icon {
+    @apply w-[3.5vw] rounded-full;
+}
+
+.section {
+    @apply flex flex-col items-center gap-12 py-[2rem] bg-[#eeeaff];
+}
+
+.header {
+    @apply font-bold text-[4rem] text-purple-900 text-center;
+}
+
+.subheader {
+    @apply text-[1.75rem] text-purple-800;
+}
+
+.exp-card-grid {
+    @apply grid grid-cols-3 gap-4 md:gap-6 lg:gap-8 h-max;
+    grid-auto-rows: 1fr;
+}
+
+.exp-card {
+    @apply flex flex-col w-[20vw] px-12 py-2 bg-purple-900 text-purple-50 text-[1.5rem] text-center justify-center font-semibold rounded-xl border-3 border-black shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-[1.05] overflow-hidden cursor-pointer;
+}
+
+.edu-card-grid {
+    @apply grid grid-cols-4 gap-4 md:gap-6 lg:gap-8 h-max;
+    grid-auto-rows: 1fr;
+}
+
+.edu-card {
+    @apply flex flex-col w-[20vw] px-12 py-4 bg-[#6053a126] text-purple-950 text-[1.5rem] text-center justify-center font-semibold rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-[1.05] overflow-hidden;
+}
+
+.skill-card-grid {
+    @apply grid grid-cols-6 gap-4 md:gap-6 lg:gap-8 h-max;
+    grid-auto-rows: 1fr;
+}
+
+.skill-card {
+    @apply flex flex-col w-[12vw] px-12 py-4 bg-[#6053a126] text-purple-950 text-[1.5rem] text-center justify-center font-semibold rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-[1.05] overflow-hidden;
+}
+
+.desc {
+    @apply text-[1.75rem] text-purple-900 w-[70vw];
+}
+
+.astro-card-grid {
+    @apply grid grid-cols-2 gap-4 md:gap-6 lg:gap-8;
+    grid-auto-rows: 1fr;
+}
+
+.astro-card {
+    @apply flex flex-col w-[45vw] ;
+}
