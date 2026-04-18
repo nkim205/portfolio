@@ -3,7 +3,7 @@ import ProjectImageGallery from "./Components/ProjectImageGallery";
 
 const teamPhoto = [
   {
-    src: "/portfolio/images/gtpl.jpg",
+    src: `${import.meta.env.BASE_URL}images/gtpl.jpg`,
     alt: "Propulsive Landers team and rocket hardware",
     label: "GTPL team & hardware",
   },

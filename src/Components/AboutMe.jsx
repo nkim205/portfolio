@@ -44,7 +44,7 @@ const AboutMe = () => {
           </div>
           <div className="flex flex-col items-start gap-6">
             <img
-              src="/portfolio/images/headshot.jpg"
+              src={`${import.meta.env.BASE_URL}images/headshot.jpg`}
               alt="Nathan Kim"
               width={400}
               height={400}

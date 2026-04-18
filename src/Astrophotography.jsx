@@ -3,37 +3,37 @@ import ProjectImageGallery from "./Components/ProjectImageGallery";
 
 const gallery = [
   {
-    src: "/portfolio/images/astro/lagoon.png",
+    src: `${import.meta.env.BASE_URL}images/astro/lagoon.png`,
     alt: "Lagoon Nebula",
     label: "Lagoon Nebula (M8)",
     when: "June 2025",
   },
   {
-    src: "/portfolio/images/astro/orion.png",
+    src: `${import.meta.env.BASE_URL}images/astro/orion.png`,
     alt: "Orion Nebula",
     label: "Orion Nebula (M42)",
     when: "December 2024",
   },
   {
-    src: "/portfolio/images/astro/tadpoles.png",
+    src: `${import.meta.env.BASE_URL}images/astro/tadpoles.png`,
     alt: "Tadpoles Nebula",
     label: "Tadpoles Nebula (IC 410)",
     when: "November 2024",
   },
   {
-    src: "/portfolio/images/astro/heart-and-soul.png",
+    src: `${import.meta.env.BASE_URL}images/astro/heart-and-soul.png`,
     alt: "Heart and Soul Nebula region",
     label: "Heart & Soul Nebula",
     when: "September 2024",
   },
   {
-    src: "/portfolio/images/astro/eclipse.png",
+    src: `${import.meta.env.BASE_URL}images/astro/eclipse.png`,
     alt: "Solar eclipse",
     label: "Total solar eclipse timelapse",
     when: "April 2024",
   },
   {
-    src: "/portfolio/images/astro/moon.png",
+    src: `${import.meta.env.BASE_URL}images/astro/moon.png`,
     alt: "Moon",
     label: "Lunar surface",
     when: "October 2023",

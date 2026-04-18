@@ -47,7 +47,7 @@ const Footer = () => {
         <p className="container-page text-left text-sm text-[var(--color-muted)]">
           © {year} Nathan Kim ·{" "}
           <a
-            href="https://github.com/nkim205/portfolio"
+            href="https://github.com/nkim205/portfolio-website"
             target="_blank"
             rel="noreferrer"
             className="footer-link inline"

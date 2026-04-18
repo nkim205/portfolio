@@ -3,32 +3,32 @@ import ProjectImageGallery from "./Components/ProjectImageGallery";
 
 const screens = [
   {
-    src: "/portfolio/images/wandersync/home.png",
+    src: `${import.meta.env.BASE_URL}images/wandersync/home.png`,
     alt: "WanderSync home screen",
     label: "Home",
   },
   {
-    src: "/portfolio/images/wandersync/Accomodations.png",
+    src: `${import.meta.env.BASE_URL}images/wandersync/Accomodations.png`,
     alt: "WanderSync accommodations screen",
     label: "Accommodations",
   },
   {
-    src: "/portfolio/images/wandersync/Logistics.png",
+    src: `${import.meta.env.BASE_URL}images/wandersync/Logistics.png`,
     alt: "WanderSync logistics screen",
     label: "Logistics",
   },
   {
-    src: "/portfolio/images/wandersync/Destinations.png",
+    src: `${import.meta.env.BASE_URL}images/wandersync/Destinations.png`,
     alt: "WanderSync destinations screen",
     label: "Destinations",
   },
   {
-    src: "/portfolio/images/wandersync/Dining.png",
+    src: `${import.meta.env.BASE_URL}images/wandersync/Dining.png`,
     alt: "WanderSync dining screen",
     label: "Dining",
   },
   {
-    src: "/portfolio/images/wandersync/Community.png",
+    src: `${import.meta.env.BASE_URL}images/wandersync/Community.png`,
     alt: "WanderSync community screen",
     label: "Community",
   },

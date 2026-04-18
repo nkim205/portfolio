@@ -3,22 +3,22 @@ import ProjectImageGallery from "./Components/ProjectImageGallery";
 
 const galleryItems = [
   {
-    src: "/portfolio/images/grower/grower_state_3d.png",
+    src: `${import.meta.env.BASE_URL}images/grower/grower_state_3d.png`,
     alt: "South Eastern states 3D outage visualization",
     label: "Southeast states — 3D view",
   },
   {
-    src: "/portfolio/images/grower/grower_state_2d.png",
+    src: `${import.meta.env.BASE_URL}images/grower/grower_state_2d.png`,
     alt: "South Eastern states 2D outage visualization",
     label: "Southeast states — 2D view",
   },
   {
-    src: "/portfolio/images/grower/grower_county_3d.png",
+    src: `${import.meta.env.BASE_URL}images/grower/grower_county_3d.png`,
     alt: "County-level 3D visualization",
     label: "County view — 3D",
   },
   {
-    src: "/portfolio/images/grower/grower_county_2d.png",
+    src: `${import.meta.env.BASE_URL}images/grower/grower_county_2d.png`,
     alt: "County-level 2D visualization",
     label: "County view — 2D",
   },

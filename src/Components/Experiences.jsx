@@ -13,7 +13,7 @@ const projects = [
     summary:
       "Built and operate a daily Python data processing pipeline that ingests multi-provider outage CSVs from S3, standardizes messy columns and county names via per-state mappings, computes SAIDI and SAIFI metrics, formats output for both visualization and long term analytics, and publishes production ready outputs to S3 via GitHub Actions with parallel runs per state. I also contribute to and lead the design to the GROWER dashboard, improving clarity, adding historical metrics tracking, and keeping releases in line with daily automated refreshes.",
     tags: ["Python", "AWS S3", "GitHub Actions", "JavaScript", "React"],
-    image: "/portfolio/images/grower/grower_county_3d.png",
+    image: `${import.meta.env.BASE_URL}images/grower/grower_county_3d.png`,
     imageAlt: "GROWER dashboard chart for North Carolina SAIDI",
   },
   {
