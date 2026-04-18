@@ -1,19 +1,68 @@
-import Header from "./Components/Header";
+import ProjectPage from "./Components/ProjectPage";
+import ProjectImageGallery from "./Components/ProjectImageGallery";
+
+const teamPhoto = [
+  {
+    src: "/portfolio/images/gtpl.jpg",
+    alt: "Propulsive Landers team and rocket hardware",
+    label: "GTPL team & hardware",
+  },
+];
 
 const GTPL = () => {
-    const gtplDesc = "In Fall 2024, I joined Propulsive Landers at Georgia Tech as a GNC algorithms developer, where I designed spline-based path-planning and gimbal-command translation algorithms for VTOL rockets. We were accepted to present our research at the AIAA Region 2 Conference in Greensboro, North Carolina (April 2025). In December of 2024, I was promoted to GNC Vice-Lead, where I first led the development of our rocket's state space model. Following its completion, I co-directed the implementation of our Linear Quadratic Regulator (LQR) control loop, improving accuracy and runtime by 20%."
-
-    return (
-        <div>
-            <Header/>
-            <div className="section h-full min-h-[100vh]">
-                <p className="header">Georgia Tech Propulsive Landers (GTPL)</p>
-                <a href="https://www.gtpropulsivelanders.org/" target="_blank" className="desc text-center underline">Link to Propulsive Landers Website</a>
-                <p className="desc indent-[4rem]">{gtplDesc}</p>
-                <img src="/portfolio/images/gtpl.jpg" className="w-[60vw]"/>
-            </div>
-        </div>
-    )
-}
+  return (
+    <ProjectPage
+      title="Propulsive Landers (GTPL)"
+      subtitle="Georgia Tech · VTOL rocket GNC"
+      role="GNC vice-lead (formerly algorithms developer)"
+      period="Aug 2024 – May 2025"
+      tags={["Python", "C++", "Controls", "Path planning", "AIAA"]}
+      links={[
+        {
+          href: "https://www.gtpropulsivelanders.org/",
+          label: "Team website",
+        },
+        {
+          href: "https://arc.aiaa.org/doi/10.2514/6.2025-99477",
+          label: "AIAA publication",
+        },
+      ]}
+      about={
+        <>
+          <p>
+            Georgia Tech Propulsive Landers develops guidance, navigation, and
+            control for VTOL-class rockets. I worked on spline-based path
+            planning and gimbal-command translation, with results accepted for
+            presentation at the AIAA Region 2 Conference (April 2025). The
+            published paper,{" "}
+            <a
+              className="italic"
+              href="https://arc.aiaa.org/doi/10.2514/6.2025-99477"
+            >
+              Spline-Based Flight Path Planning and Following for Aerial
+              Navigation
+            </a>
+            , documents the spline formulation and flight-path following work in
+            full.
+          </p>
+          <p>
+            After becoming the GNC vice-lead, I co-lead the development of our
+            state space model and LQR rocket control scheme.
+          </p>
+        </>
+      }
+      highlightSections={[
+        {
+          title: "Contributions & outcomes",
+          items: [
+            "Co-led the initial state space model and an LQR control loop.",
+            "Designed a hybrid spline path planner, blending Hermite and Bézier properties to cut path-planning computation time and memory versus prior approaches.",
+            "Authored and presented peer-reviewed AIAA research on spline-based flight-path planning and following for aerial navigation.",
+          ],
+        },
+      ]}
+    ></ProjectPage>
+  );
+};
 
 export default GTPL;

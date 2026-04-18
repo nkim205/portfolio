@@ -1,38 +1,66 @@
-const Skills = () => {
-    return (
-        <div className="flex flex-col items-center gap-0 py-[2rem] bg-[#eeeaff]">
-            <p className="header">Skills</p>
-            <div className="section">
-                <p className="subheader">Programming Languages</p>
-                <div className="skill-card-grid">
-                    <p className="skill-card">Java</p>
-                    <p className="skill-card">JavaScript</p>
-                    <p className="skill-card">C</p>
-                    <p className="skill-card">C++</p>
-                    <p className="skill-card">Python</p>
-                    <p className="skill-card">MATLAB</p>
-                </div>
-            </div>
+const skillGroups = [
+  {
+    title: "Languages",
+    items: ["Java", "JavaScript", "Python", "SQL", "C"],
+  },
+  {
+    title: "Web & APIs",
+    items: [
+      "React",
+      "Node.js",
+      "Express",
+      "TailwindCSS",
+      "REST APIs",
+      "JWT",
+      "Auth0",
+      "HTML",
+    ],
+  },
+  {
+    title: "Data & infra",
+    items: [
+      "MongoDB",
+      "MySQL",
+      "Pandas",
+      "Docker",
+      "Git",
+      "Cloud deployment (Render, Netlify)",
+      "Google Firebase",
+    ],
+  },
+  {
+    title: "Practices",
+    items: ["Agile", "System design", "Figma"],
+  },
+];
 
-            <div className="section">
-                <p className="subheader">Technologies, Frameworks, & Skills</p>
-                <div className="skill-card-grid">
-                    <p className="skill-card">Node.js</p>
-                    <p className="skill-card">React.js</p>
-                    <p className="skill-card">TailwindCSS</p>
-                    <p className="skill-card">Express</p>
-                    <p className="skill-card">MongoDB</p>
-                    <p className="skill-card">Google Firebase</p>
-                    <p className="skill-card">RESTful APIs</p>
-                    <p className="skill-card">JWT Authentication</p>
-                    <p className="skill-card">Auth0</p>
-                    <p className="skill-card">Cloud Deployment</p>
-                    <p className="skill-card">Git</p>
-                    <p className="skill-card">Agile Methodologies</p>
-                </div>
+const Skills = () => {
+  return (
+    <section className="border-b border-[var(--color-border)] bg-[var(--color-surface)]">
+      <div className="container-page section-y">
+        <header className="mb-12 max-w-4xl">
+          <p className="section-label mb-2">Skills</p>
+          <h2 className="heading-section mb-3">Tools & stack</h2>
+        </header>
+        <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-4">
+          {skillGroups.map((group) => (
+            <div key={group.title}>
+              <h3 className="mb-4 text-base font-semibold text-[var(--color-text)]">
+                {group.title}
+              </h3>
+              <ul className="flex flex-wrap gap-2">
+                {group.items.map((item) => (
+                  <li key={item}>
+                    <span className="chip">{item}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
+          ))}
         </div>
-    )
-}
+      </div>
+    </section>
+  );
+};
 
 export default Skills;

@@ -1,32 +1,84 @@
-import Header from "./Components/Header";
+import ProjectPage from "./Components/ProjectPage";
+import ProjectImageGallery from "./Components/ProjectImageGallery";
+
+const gallery = [
+  {
+    src: "/portfolio/images/astro/lagoon.png",
+    alt: "Lagoon Nebula",
+    label: "Lagoon Nebula (M8)",
+    when: "June 2025",
+  },
+  {
+    src: "/portfolio/images/astro/orion.png",
+    alt: "Orion Nebula",
+    label: "Orion Nebula (M42)",
+    when: "December 2024",
+  },
+  {
+    src: "/portfolio/images/astro/tadpoles.png",
+    alt: "Tadpoles Nebula",
+    label: "Tadpoles Nebula (IC 410)",
+    when: "November 2024",
+  },
+  {
+    src: "/portfolio/images/astro/heart-and-soul.png",
+    alt: "Heart and Soul Nebula region",
+    label: "Heart & Soul Nebula",
+    when: "September 2024",
+  },
+  {
+    src: "/portfolio/images/astro/eclipse.png",
+    alt: "Solar eclipse",
+    label: "Total solar eclipse timelapse",
+    when: "April 2024",
+  },
+  {
+    src: "/portfolio/images/astro/moon.png",
+    alt: "Moon",
+    label: "Lunar surface",
+    when: "October 2023",
+  },
+];
 
 const Astrophotography = () => {
-    return (
-        <div>
-            <Header/>
-            <div className="section h-full">
-                <p className="header">Astrophotography</p>
-                <div className="desc">
-                    <p>In December 2022, I witnessed my first astronomical event —the Geminid meteor shower— and instantly became hooked on capturing the night sky. Over the past three years I’ve:</p>
-                    <ul className="list-disc ml-16">
-                        <li>Overcome freezing winter nights to capture deep-sky objects</li>
-                        <li>Gained patience and resilience waiting for the stars to align under a clear, moonless night sky</li>
-                        <li>Overcome various setbacks with by experimenting with different equipment and techniques</li>
-                    </ul>
-                    <p>Through countless nights spent up in the mountains, I've captured stunning images of the Orion Nebula, Lagoon Nebula, and more!</p>
-                </div>
-                
-                <div className="astro-card-grid">
-                    <img src="/portfolio/images/astro/orion.png" className="astro-card"/>
-                    <img src="/portfolio/images/astro/heart-and-soul.png" className="astro-card"/>
-                    <img src="/portfolio/images/astro/tadpoles.png" className="astro-card"/>
-                    <img src="/portfolio/images/astro/lagoon.png" className="astro-card"/>
-                    <img src="/portfolio/images/astro/moon.png" className="astro-card"/>
-                    <img src="/portfolio/images/astro/eclipse.png" className="astro-card"/>
-                </div>
-            </div>
-        </div>
-    )
-}
+  return (
+    <ProjectPage
+      title="Astrophotography"
+      subtitle="Deep-sky imaging"
+      role="Personal project · hobby"
+      period="2022 – present"
+      tags={["Astrophotography"]}
+      links={[]}
+      about={
+        <>
+          <p>
+            In December 2022 I watched the Geminid meteor shower and started
+            photographing the night sky. Since then I have spent many cold,
+            clear nights in the mountains tuning mounts, exposure lengths, and
+            processing to pull faint detail out of light-polluted or turbulent
+            skies.
+          </p>
+          <p>
+            Some of my favorite targets so far include the Orion Nebula, Lagoon
+            Nebula, and a growing library of wide-field and deep-sky frames
+            built through trial, error, and repetition.
+          </p>
+        </>
+      }
+    >
+      <>
+        <h2>Gallery</h2>
+        <p className="mb-6 text-base text-[var(--color-muted)] sm:text-lg">
+          Click an image for a larger view.
+        </p>
+        <ProjectImageGallery
+          items={gallery}
+          gridClassName="project-gallery project-gallery--three"
+          showFigcaptions
+        />
+      </>
+    </ProjectPage>
+  );
+};
 
 export default Astrophotography;
